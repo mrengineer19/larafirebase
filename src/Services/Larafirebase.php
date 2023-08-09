@@ -115,6 +115,7 @@ class Larafirebase
     {
         $fields = array(
             'registration_ids' => $this->validateToken($tokens),
+            'content_available' => true,
             'notification' => ($this->fromArray) ? $this->fromArray : [
                 'title' => $this->title,
                 'body' => $this->body,
